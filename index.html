@@ -45,7 +45,7 @@ function outputNationalDex() {
       }
       if ((blockIndex) % 30 === 0) {
         if (blockIndex != 0) {
-          output += "</div><div class='card'>";
+          output += `</div><div class="row">`;
         }
         output += "<div class='subheader'><h2>" + formatDexNumber(blockIndex+1) + " - " + formatDexNumber(blockIndex+30) + "</h2></div>";
         subBlockIndex = 0;

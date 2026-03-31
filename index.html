@@ -62,8 +62,7 @@ function outputNationalDex() {
       // }
         
       //TEMP Hidden to be re added after testing
-      //output += `<div class="col"><img src="` + imagePathFor(pokemon.name) + `" alt="` + pokemon.name + `"/><font>` + formatDexNumber(pokemon.number) + `</font>` + pokemon.name + `</div>`;
-      output += `<div class="col text-center" style="background-color:#f0f0f0;"><font>` + formatDexNumber(pokemon.number) + `</font></div>`;
+      output += `<div class="col"><img src="` + imagePathFor(pokemon.name) + `" alt="` + pokemon.name + `" class="img-fluid"/><font>` + formatDexNumber(pokemon.number) + `</font><font style="font-size:0.5rem;">` + pokemon.name + `</font></div>`;
       
       boxIndex++;
       //subBlockIndex++;

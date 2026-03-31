@@ -25,7 +25,8 @@ function header(title) {
 function outputNationalDex() {
     let blockIndex = 0;
     let subBlockIndex = 0;
-    output += `<div class="row row-cols-3">`;
+    output += `<div class="row row-cols-3"><div class="col-6">`;
+    output += `<div class="row"><div class="col-6">`;
     pokemon.forEach(outputDexItems);
     function outputDexItems(pokemon, index) {
       function formatDexNumber(num) {

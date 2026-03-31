@@ -176,9 +176,9 @@ function outputNationalDex() {
     }
     let endBlankBlocks = 30 - (pokemon.length % 30);
     for (let i = 0; i < endBlankBlocks; i++) {
-      output += ".<div>..</div>";
+      output += `<div class="col"></div>`;
     }
-    output += "...</div>";
+    output += `...</div>`;
 }
 // function outputAltForm(title) {
 //     let blockIndex = 0;

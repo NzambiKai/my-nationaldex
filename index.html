@@ -52,7 +52,7 @@ function outputNationalDex() {
         output += `<div class="col-12 text-center" style="background-color:#f3f3f3;"><h2>` + formatDexNumber(boxIndex+1) + ` - ` + formatDexNumber(boxIndex+30) + `</h2></div>`;
       }
         
-      output += `<div class="col" style="padding-left:0em; padding-right:0em;"><div class="card text-center"><img src="` + imagePathFor(pokemon.name) + `" class="card-img-top mx-auto d-block w-75" alt="` + pokemon.name + `"><div class="card-body" style="padding-left:0em; padding-right:0em;"><h5 class="card-title" style="font-size:1em;">` + formatDexNumber(pokemon.number) + `</h5><h6 class="card-subtitle text-body-secondary text-center" style="font-size:0.6em;">` + pokemon.name + `</h6></div></div></div>`;
+      output += `<div class="col" style="padding:0.5em, 0em, 0.5em, 0em;"><div class="card text-center"><img src="` + imagePathFor(pokemon.name) + `" class="card-img-top mx-auto d-block w-75" alt="` + pokemon.name + `"><div class="card-body" style="padding-left:0em; padding-right:0em;"><h5 class="card-title" style="font-size:1em;">` + formatDexNumber(pokemon.number) + `</h5><h6 class="card-subtitle text-body-secondary text-center" style="font-size:0.6em;">` + pokemon.name + `</h6></div></div></div>`;
       boxIndex++;
       //subBlockIndex++;
     }

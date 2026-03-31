@@ -61,7 +61,7 @@ function outputNationalDex() {
       //   classBlock += "class='bottomRightBlock'";
       // }
         
-      output += `<div class="col"><div class="card"><img src="` + imagePathFor(pokemon.name) + `" class="card-img-top" alt="` + pokemon.name + `"><div class="card-body"><h5 class="card-title text-center">` + formatDexNumber(pokemon.number) + `</h5><h6 class="card-subtitle text-body-secondary text-center" style="font-size:0.6em;">` + pokemon.name + `</h6></div></div></div>`;
+      output += `<div class="col" style="padding-left:0em; padding-right:0em;"><div class="card"><img src="` + imagePathFor(pokemon.name) + `" class="card-img-top" alt="` + pokemon.name + `"><div class="card-body"><h5 class="card-title text-center">` + formatDexNumber(pokemon.number) + `</h5><h6 class="card-subtitle text-body-secondary text-center" style="font-size:0.6em;">` + pokemon.name + `</h6></div></div></div>`;
       //<div class="col text-center"><img src="` + imagePathFor(pokemon.name) + `" alt="` + pokemon.name + `" class="img-fluid"/><br/><font class="fw-semibold">` + formatDexNumber(pokemon.number) + `</font><br/><font style="font-size:0.75rem;">` + pokemon.name + `</font></div>`;
       
       boxIndex++;

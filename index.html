@@ -131,8 +131,7 @@ function header(title) {
 function outputNationalDex() {
     let blockIndex = 0;
     let subBlockIndex = 0;
-    output += `<div class="row row-cols-3"><div class="col-6">`;
-    output += `<div class="row"><div class="col-6">`;
+    output += `<div class="row row-cols-3"><div class="col"><div class="row row-cols-6">`;
     pokemon.forEach(outputDexItems);
     function outputDexItems(pokemon, index) {
       function formatDexNumber(num) {
@@ -151,9 +150,9 @@ function outputNationalDex() {
         return "assets/images/" + lowercasePokemonName + ".webp";
       }
       if ((blockIndex) % 30 === 0) {
-        // if (blockIndex != 0) {
-        //   output += `</div><div class="row">`;
-        // }
+        if (blockIndex != 0) {
+          output += `</div><div class="row">`;
+        }
         output += `<div class="col-12"><h2>` + formatDexNumber(blockIndex+1) + ` - ` + formatDexNumber(blockIndex+30) + `</h2></div>`;
         subBlockIndex = 0;
       }
@@ -164,7 +163,10 @@ function outputNationalDex() {
       // if (subBlockIndex === 29) {
       //   classBlock += "class='bottomRightBlock'";
       // }
-      output += `<div class="col"><img src="` + imagePathFor(pokemon.name) + `" alt="` + pokemon.name + `"/><font>` + formatDexNumber(pokemon.number) + `</font>` + pokemon.name + `</div>`;
+        
+      //TEMP Hidden to be re added after testing
+      //output += `<div class="col"><img src="` + imagePathFor(pokemon.name) + `" alt="` + pokemon.name + `"/><font>` + formatDexNumber(pokemon.number) + `</font>` + pokemon.name + `</div>`;
+      output += `<div class="col"><font>` + formatDexNumber(pokemon.number) + `</font></div>`;
       blockIndex++;
       subBlockIndex++;
     }

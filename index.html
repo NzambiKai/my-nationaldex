@@ -25,7 +25,7 @@ function header(title) {
 function outputNationalDex() {
     let boxIndex = 0;
     //let subBlockIndex = 0;
-    output += `<div class="row row-cols-3"><div class="col m-5"><div class="row row-cols-6">`;
+    output += `<div class="row row-cols-3 p-5"><div class="col"><div class="row row-cols-6">`;
     pokemon.forEach(outputDexItems);
     function outputDexItems(pokemon, index) {
         
@@ -48,7 +48,7 @@ function outputNationalDex() {
         
       if ((boxIndex) % 30 === 0) {
         if (boxIndex != 0) {
-          output += `</div></div><div class="col m-5"><div class="row row-cols-6">`;
+          output += `</div></div><div class="col"><div class="row row-cols-6">`;
         }
         output += `<div class="col-12 text-center"><h2>` + formatDexNumber(boxIndex+1) + ` - ` + formatDexNumber(boxIndex+30) + `</h2></div>`;
         //subBlockIndex = 0;

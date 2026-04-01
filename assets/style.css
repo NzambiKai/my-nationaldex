@@ -23,6 +23,7 @@ div.card {
     border-radius: 1em 1em 0em 0em; 
 }
 .box-title > div {
+    flex: 1;
     background-color:#FFFFFF;
     padding: 0em 3em 0em 3em;
     margin-left:auto;

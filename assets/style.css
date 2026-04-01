@@ -18,7 +18,8 @@ div.card {
     background-color:#fafbf3;
 }
 .box-title {
-    background-color:#fafbf3;
+    background-color:#11a7a8;
+    border-radius: 1em 1em 0em 0em; 
 }
 /* .container > div.card > div.bottomLeftBlock {
     border-radius: 0rem 0rem 0rem 1rem;

@@ -26,8 +26,6 @@ div.card {
     flex: 1;
     background-color:#FFFFFF;
     padding: 0em 3em 0em 3em;
-    margin-left:auto;
-    margin-right:auto;
 }
 /* .container > div.card > div.bottomLeftBlock {
     border-radius: 0rem 0rem 0rem 1rem;

@@ -17,6 +17,9 @@ div.card {
 .box {
     background-color:#fafbf3;
 }
+.box-title {
+    background-color:#fafbf3;
+}
 /* .container > div.card > div.bottomLeftBlock {
     border-radius: 0rem 0rem 0rem 1rem;
 }

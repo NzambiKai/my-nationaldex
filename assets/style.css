@@ -22,7 +22,7 @@ div.card {
     background-color:#11a7a8;
     border-radius: 1em 1em 0em 0em; 
 }
-.box-title > h2 > span {
+.box-title > div {
     background-color:#FFFFFF;
     padding: 0em 3em 0em 3em;
 }

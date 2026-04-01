@@ -22,11 +22,6 @@ div.card {
     background-color:#11a7a8;
     border-radius: 1em 1em 0em 0em; 
 }
-.box-title > div {
-    flex: 1;
-    background-color:#FFFFFF;
-    padding: 0em 3em 0em 3em;
-}
 /* .container > div.card > div.bottomLeftBlock {
     border-radius: 0rem 0rem 0rem 1rem;
 }
